@@ -2,10 +2,10 @@ import { defineOperationApp } from '@directus/extensions-sdk';
 import Prompts from './prompts';
 
 export default defineOperationApp({
-	id: 'directus-labs-ai-writer-operation',
-	name: 'AI Writer',
+	id: 'karyasa-ai-writer-operation',
+	name: 'Karyasa AI Writer',
 	icon: 'edit_square',
-	description: 'Use Anthropic, OpenAI, and Replicate APIs to generate text',
+	description: 'Use OpenAI to generate text from prompts and user input.',
 	overview: ({ model, promptKey, aiProvider }) => [
 		{
 			label: 'AI  Provider',
