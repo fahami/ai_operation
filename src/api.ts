@@ -20,7 +20,7 @@ export interface AiWriterOperationOptions {
 }
 
 export default defineOperationApi<AiWriterOperationOptions>({
-	id: 'directus-labs-ai-writer-operation',
+	id: 'karyasa-ai-writer-operation',
 	handler: async (options: AiWriterOperationOptions) => {
 		try {
 			const provider = getProvider(options);
@@ -29,9 +29,7 @@ export default defineOperationApi<AiWriterOperationOptions>({
 			return message;
 		}
 		catch (error: any) {
-			log('AI Writer failed');
-			log(JSON.stringify(error));
-			throw new Error(`AI Writer operation failed: ${typeof error} ${JSON.stringify(error)}`);
+			throw new Error(`Analysis operation failed: ${error}`);
 		}
 	},
 });
