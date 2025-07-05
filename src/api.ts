@@ -1,7 +1,6 @@
 import type { message } from './types';
 /// <reference types="@directus/extensions/api.d.ts" />
 import { defineOperationApi } from '@directus/extensions-sdk';
-import { log } from 'directus:api';
 import { getProvider } from './Provider/ProviderFactory';
 
 export interface AiWriterOperationOptions {
@@ -20,7 +19,7 @@ export interface AiWriterOperationOptions {
 }
 
 export default defineOperationApi<AiWriterOperationOptions>({
-	id: 'karyasa-ai-writer-operation',
+	id: 'ai_operation',
 	handler: async (options: AiWriterOperationOptions) => {
 		try {
 			const provider = getProvider(options);
