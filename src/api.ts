@@ -19,7 +19,7 @@ export interface AiWriterOperationOptions {
 }
 
 export default defineOperationApi<AiWriterOperationOptions>({
-	id: 'ai_operation',
+	id: 'ai-operation',
 	handler: async (options: AiWriterOperationOptions) => {
 		try {
 			const provider = getProvider(options);

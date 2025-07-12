@@ -2,7 +2,7 @@ import { defineOperationApp } from '@directus/extensions-sdk';
 import Prompts from './prompts';
 
 export default defineOperationApp({
-	id: 'karyasa-ai-writer-operation',
+	id: 'ai-operation',
 	name: 'Karyasa AI Writer',
 	icon: 'edit_square',
 	description: 'Use OpenAI to generate text from prompts and user input.',
