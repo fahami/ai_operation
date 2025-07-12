@@ -3,7 +3,7 @@ import Prompts from './prompts';
 
 export default defineOperationApp({
 	id: 'ai-operation',
-	name: 'Karyasa AI Writer',
+	name: 'AI Operation',
 	icon: 'edit_square',
 	description: 'Use OpenAI to generate text from prompts and user input.',
 	overview: ({ model, promptKey, aiProvider }) => [
